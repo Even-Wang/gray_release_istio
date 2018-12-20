@@ -22,23 +22,39 @@ type Graypolicy struct {
 
 }
 
-func (svc *Service) initService(appid,proc,image string,versions []string,rules map[string]int, envs []deployment.Env, port int) *Service {
+func (svc *Service) initService(appid,proc,image string,versions []string,rules map[string]int, envs []deployment.Env, gw_port,port int) *Service {
 
 	return &Service{
-		Gateway:               svc.Gateway.GetGateway(appid,port,proc),
+		Gateway:               svc.Gateway.GetGateway(appid,gw_port,proc),
 		Destinationrule:       svc.Destinationrule.GetDestinationRule(appid,versions),
-		Virtulservice:        svc.Virtulservice.GetVs(appid,rules,port),
+		Virtulservice:         svc.Virtulservice.GetVs(appid,rules,port),
 
 	}
 
 }
 
 
-func (gp *Graypolicy) getgraypolicy(appid,proc,image,version string,versions []string,rules map[string]int, envs []deployment.Env, port int) *Graypolicy {
+//新版本version,各版本及对应值流量权重组成的rules
+func (gp *Graypolicy) initgray(appid,proc,image,version string,rules map[string]int, envs []deployment.Env, port int) *Graypolicy {
+	var b_version []string
+	for i,_ := range rules{
+		b_version = append(b_version,i)
+	}
 
 	return &Graypolicy{
-		Deployment:            *gp.Deployment.GetDeploy(appid,image,version,envs,port),
-		Destinationrule:       *gp.Destinationrule.GetDestinationRule(appid,versions),
+		Deployment:            *gp.Deployment.GetDeploy(appid,image,version,envs,port,0),
+		Destinationrule:       *gp.Destinationrule.GetDestinationRule(appid,b_version),
+		Virtualservice:        *gp.Virtualservice.GetVs(appid,rules,port),
+
+	}
+
+}
+
+
+func (gp *Graypolicy) updatepolicy(appid,proc,image,version string,rules map[string]int, envs []deployment.Env, port,replices int) *Graypolicy {
+
+	return &Graypolicy{
+		Deployment:            *gp.Deployment.GetDeploy(appid,image,version,envs,port,replices),
 		Virtualservice:        *gp.Virtualservice.GetVs(appid,rules,port),
 
 	}

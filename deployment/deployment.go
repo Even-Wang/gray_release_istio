@@ -58,8 +58,9 @@ type Env struct {
 }
 
 
-func (deploy *Deployment) GetDeploy(appid string, image string, version string, envs []Env, port int) *Deployment {
+func (deploy *Deployment) GetDeploy(appid string, image string, version string, envs []Env, port,num int) *Deployment {
 	deploy.Metadata.Name = appid
+	deploy.Spec.Replicas = num
 	deploy.Spec.Template.Spec.Containers[0].Name = appid
 	deploy.Spec.Template.Metadata.Labels.App = appid
 	deploy.Spec.Template.Spec.Containers[0].Image = image
