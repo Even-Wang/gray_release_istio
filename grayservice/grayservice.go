@@ -15,9 +15,15 @@ type Service struct {
 	Virtulservice        *virtualservice.VirtualService          `json:"virtrulservice"`
 }
 
+type Initgray struct {
+	*Graypolicy
+	Destinationrule       destination.DestinationRule            `json:"destination"`
+
+}
+
 type Graypolicy struct {
 	Deployment            deployment.Deployment                  `json:"deployment"`
-	Destinationrule       destination.DestinationRule            `json:"destination"`
+
 	Virtualservice        virtualservice.VirtualService          `json:"virtrulservice"`
 
 }
@@ -35,28 +41,26 @@ func (svc *Service) initService(appid,proc,image string,versions []string,rules 
 
 
 //新版本version,各版本及对应值流量权重组成的rules
-func (gp *Graypolicy) initgray(appid,proc,image,version string,rules map[string]int, envs []deployment.Env, port int) *Graypolicy {
+func (gp *Initgray) initgray(appid,proc,image,version string,rules map[string]int, envs []deployment.Env, port int) *Initgray {
 	var b_version []string
 	for i,_ := range rules{
 		b_version = append(b_version,i)
 	}
+	r := &Initgray{}
+	r.Deployment = *gp.Deployment.GetDeploy(appid,image,version,envs,port,0)
+	r.Destinationrule = *gp.Destinationrule.GetDestinationRule(appid,b_version)
+	r.Virtualservice = *gp.Virtualservice.GetVs(appid,rules,port)
+	return  r
 
-	return &Graypolicy{
-		Deployment:            *gp.Deployment.GetDeploy(appid,image,version,envs,port,0),
-		Destinationrule:       *gp.Destinationrule.GetDestinationRule(appid,b_version),
-		Virtualservice:        *gp.Virtualservice.GetVs(appid,rules,port),
-
-	}
 
 }
 
 
-func (gp *Graypolicy) updatepolicy(appid,proc,image,version string,rules map[string]int, envs []deployment.Env, port,replices int) *Graypolicy {
+func (gp *Initgray) updatepolicy(appid,proc,image,version string,rules map[string]int, envs []deployment.Env, port,replices int) *Graypolicy {
 
-	return &Graypolicy{
-		Deployment:            *gp.Deployment.GetDeploy(appid,image,version,envs,port,replices),
-		Virtualservice:        *gp.Virtualservice.GetVs(appid,rules,port),
-
-	}
+	r := &Graypolicy{}
+	r.Virtualservice = *gp.Virtualservice.GetVs(appid,rules,port)
+	r.Deployment =  *gp.Deployment.GetDeploy(appid,image,version,envs,port,replices)
+	return r
 
 }
