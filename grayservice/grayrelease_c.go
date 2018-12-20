@@ -35,13 +35,13 @@ func (svc *InitgrayService) initService(appid,proc,image string,versions []strin
 
 
 //init_policy of gray_release
-func (gp *Initgray) initgray(appid,proc,image string,rules map[string]int32, port int) *Initgray {
-	var b_version []string
+func (gp *Initgray) initgray(appid string,rules map[string]int32, port int) *Initgray {
+	var versions []string
 	for i,_ := range rules{
-		b_version = append(b_version,i)
+		versions = append(versions,i)
 	}
 	r := &Initgray{}
-	r.Destinationrule = GetDestinationRule(appid,b_version)
+	r.Destinationrule = GetDestinationRule(appid,versions)
 	r.Virtualservice =  GetVs(appid,rules,port)
 	return  r
 
@@ -49,7 +49,7 @@ func (gp *Initgray) initgray(appid,proc,image string,rules map[string]int32, por
 }
 
 //update_policy of gray_release
-func (gp *Initgray) updatepolicy(appid,proc,image,version string,rules map[string]int32, port int) *Initgray {
+func (gp *Initgray) updatepolicy(appid string,rules map[string]int32, port int) *Initgray {
 
 	r := &Initgray{}
 	r.Virtualservice = GetVs(appid,rules,port)
