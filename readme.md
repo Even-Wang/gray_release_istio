@@ -3,8 +3,6 @@
 Gray release based on Istio and Kubernetes.
 
 - [Introduction](#introduction)
-- [Repositories](#repositories)
-- [Issue management](#issue-management)
 
 In addition, here are some other documents you may wish to read:
 
