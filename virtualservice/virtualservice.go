@@ -1,6 +1,7 @@
 package virtualservice
 
 import (
+	"istio.io/api/networking/v1alpha3"
 	"log"
 )
 
@@ -73,4 +74,23 @@ func (vm *VirtualService) GetVsCon(appid string, version string) *VirtualService
 	vm.Spec.Gateways[0] = appid + "-gateway"
 	vm.Spec.Http[0].Route[0].Destination.Host = appid
 	return vm
+}
+
+
+//Todo vir based on offical api
+func GetVs2(appid string, rules map[string]int32, port int) *v1alpha3.VirtualService {
+	r := &v1alpha3.VirtualService{}
+	r.Http[0].Route[0].Destination.Port.Port.Size() = port
+	r.Gateways[0] = appid + "-gateway"
+	var rs []*v1alpha3.HTTPRouteDestination
+	tmp := r.Http[0].Route[0]
+	tmp.Destination.Host = appid
+	for k, v := range rules {
+		log.Println(k, v, rs)
+		tmp.Destination.Subset = k
+		tmp.Weight = v
+		rs = append(rs, tmp)
+	}
+	r.Http[0].Route = rs
+	return r
 }

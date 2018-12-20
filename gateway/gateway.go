@@ -1,6 +1,6 @@
 package gateway
 
-
+import "istio.io/api/networking/v1alpha3"
 
 type GateWay struct {
 	ApiVersion string   `json:"apiVersion"`
@@ -72,3 +72,13 @@ func getserver(pro string,number int)  *Server{
 }
 
 
+
+func  GetGateway2(appid string, number uint32,pro string) *v1alpha3.Gateway {
+	r := &v1alpha3.Gateway{}
+	var mapval map[string]string
+	mapval["app"] = "ingressgateway"
+	r.Selector = mapval
+	r.Servers[0].Port.Number = number
+	r.Servers[0].Port.Protocol = pro
+	return r
+}

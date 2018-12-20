@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac7ee6f2-cc67-491c-a209-653b183a54ab" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/grayservice/grayrelease_b.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/deployment.go" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/deployment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/destination/rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/destination/rule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway.go" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/gateway.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grayservice/grayservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/grayservice/grayservice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualservice/virtualservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/virtualservice/virtualservice.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,37 +33,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="vm.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/vm.yaml">
+      <file leaf-file-name="virtualservice.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virtualservice/virtualservice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="v2.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/v2.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="105" column="30" lean-forward="true" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+            <state relative-caret-position="319">
+              <caret line="80" column="58" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
               <folding>
-                <element signature="e#14#198#0" expanded="true" />
+                <element signature="e#24#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grayservice.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="virtual_service.pb.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/virtual_service.pb.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="2044" column="4" selection-start-line="2044" selection-start-column="4" selection-end-line="2044" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/destination/rule.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deployment.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/deployment.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grayservice.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grayservice/grayservice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="43" column="125" selection-start-line="43" selection-start-column="125" selection-end-line="43" selection-end-column="125" />
+            <state relative-caret-position="322">
+              <caret line="19" column="38" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="38" />
               <folding>
                 <element signature="e#21#133#0" expanded="true" />
               </folding>
@@ -65,44 +84,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v1.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/v1.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="gateway.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/gateway.yaml">
+      <file leaf-file-name="gateway.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/gateway.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="847">
+              <caret line="75" column="17" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="60-v2.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/60-v2.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="deployment.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/deployment.go">
+      <file leaf-file-name="gateway.pb.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/gateway.pb.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            <state relative-caret-position="-14">
+              <caret line="323" column="49" lean-forward="true" selection-start-line="323" selection-start-column="49" selection-end-line="323" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="svc.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/svc.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="builtin.go" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/builtin/builtin.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="rule-all.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/rule-all.yaml">
+      <file leaf-file-name="grayrelease_b.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grayservice/grayrelease_b.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="685">
+              <caret line="67" column="12" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+              <folding>
+                <element signature="e#21#121#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,6 +136,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>yaml</find>
+      <find>destination</find>
+      <find>destinationrule</find>
     </findStrings>
     <replaceStrings>
       <replace>json</replace>
@@ -136,15 +154,16 @@
         <option value="$PROJECT_DIR$/deployment/deploy2.go" />
         <option value="$PROJECT_DIR$/deployment/deploy.go" />
         <option value="$PROJECT_DIR$/deployment/conversion.go" />
-        <option value="$PROJECT_DIR$/gateway/gateway.go" />
-        <option value="$PROJECT_DIR$/destination/rule.go" />
-        <option value="$PROJECT_DIR$/virtualservice/virtualservice.go" />
         <option value="$PROJECT_DIR$/service/service.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/config/vm.yaml" />
         <option value="$PROJECT_DIR$/deployment/deployment.go" />
+        <option value="$PROJECT_DIR$/destination/rule.go" />
         <option value="$PROJECT_DIR$/grayservice/grayservice.go" />
+        <option value="$PROJECT_DIR$/gateway/gateway.go" />
+        <option value="$PROJECT_DIR$/virtualservice/virtualservice.go" />
+        <option value="$PROJECT_DIR$/grayservice/grayrelease_b.go" />
       </list>
     </option>
   </component>
@@ -213,6 +232,16 @@
               <item name="deploy_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="deploy_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.10.1" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="deploy_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;deploy_app&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -224,7 +253,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gray_istio" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
@@ -268,13 +297,13 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14270386" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3299356" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -285,26 +314,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34924892" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -313,20 +322,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/destination_rule.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8184">
-          <caret line="341" column="44" selection-start-line="341" selection-start-column="24" selection-end-line="341" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualservice/virtualservice.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1464">
@@ -499,65 +494,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/deploy2.go" />
     <entry file="file://$PROJECT_DIR$/deployment/deploy.go" />
-    <entry file="file://C:/Go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/virtual_service.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17688">
-          <caret line="745" column="12" selection-start-line="745" selection-start-column="9" selection-end-line="745" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/gateway.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="476" column="5" selection-start-line="476" selection-start-column="5" selection-end-line="476" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/gateway.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="35" column="58" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtualservice/virtualservice.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="54" column="59" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="59" />
-          <folding>
-            <element signature="e#24#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/destination_rule.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7944">
-          <caret line="341" column="44" selection-start-line="341" selection-start-column="24" selection-end-line="341" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/destination/rule.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/._svc.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -570,13 +506,6 @@
     <entry file="file://$PROJECT_DIR$/config/60-v2.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/rule-all.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/svc.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -587,18 +516,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/v2.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/v1.yaml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/vm.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -610,19 +529,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/v2.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/rule-all.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/service_dependency.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="e#126#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/destination_rule.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="446" column="5" selection-start-line="446" selection-start-column="5" selection-end-line="446" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/vm.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/deployment.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        <state relative-caret-position="48">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/virtual_service.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="2044" column="4" selection-start-line="2044" selection-start-column="4" selection-end-line="2044" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualservice/virtualservice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="80" column="58" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+          <folding>
+            <element signature="e#24#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../istio.io/api/networking/v1alpha3/gateway.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="323" column="49" lean-forward="true" selection-start-line="323" selection-start-column="49" selection-end-line="323" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/gateway.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/destination/rule.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grayservice/grayservice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="43" column="125" selection-start-line="43" selection-start-column="125" selection-end-line="43" selection-end-column="125" />
+        <state relative-caret-position="322">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="38" />
           <folding>
             <element signature="e#21#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grayservice/grayrelease_b.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="67" column="12" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+          <folding>
+            <element signature="e#21#121#0" expanded="true" />
           </folding>
         </state>
       </provider>

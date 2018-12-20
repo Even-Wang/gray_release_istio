@@ -1,5 +1,6 @@
 package destination
 
+import "istio.io/api/networking/v1alpha3"
 
 type DestinationRule struct {
 	ApiVersion string   `json:"apiVersion"`
@@ -77,3 +78,20 @@ func getsubset(version string)  *Subset{
 
 }
 
+//Todo func based on offical api
+func GetDestinationRule2(appid string, versions []string) *v1alpha3.DestinationRule {
+	r := &v1alpha3.DestinationRule{}
+	r.Host = appid
+	nt := []*v1alpha3.Subset{}
+	for _, v := range versions {
+		var s *v1alpha3.Subset
+		var mapval map[string]string
+		mapval["version"] = v
+		s.Name = v
+		s.Labels = mapval
+		nt = append(nt, s)
+	}
+	r.Subsets = nt
+
+	return r
+}
